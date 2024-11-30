@@ -49,7 +49,7 @@ class RoleResource extends Resource implements HasShieldPermissions
 
             Grid::make()
                 ->schema([
-                    Section::make(__('admin.role.role-settings'))
+                    Section::make(__('filament-shield::filament-shield.field.section'))
                         ->icon('heroicon-o-cog')
                         ->iconColor('primary')
                         ->schema([

@@ -20,7 +20,9 @@ return [
     */
 
     'field.name' => 'Nombre',
+    'field.name.desc' => 'Nombre del rol',
     'field.guard_name' => 'Guard',
+    'field.guard_name.desc' => 'Nombre del Guard que protege al rol',
     'field.permissions' => 'Permisos',
     'field.select_all.name' => 'Seleccionar todos',
     'field.select_all.message' => 'Habilitar todos los permisos actualmente <span class="text-primary font-medium">habilitados</span> para este rol',

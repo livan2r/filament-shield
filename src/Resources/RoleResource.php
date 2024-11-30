@@ -49,7 +49,7 @@ class RoleResource extends Resource implements HasShieldPermissions
 
             Grid::make()
                 ->schema([
-                    Section::make(__('admin.role-settings'))
+                    Section::make(__('admin.role.role-settings'))
                         ->icon('heroicon-o-cog')
                         ->iconColor('primary')
                         ->schema([
@@ -57,12 +57,14 @@ class RoleResource extends Resource implements HasShieldPermissions
                                 ->label(__('filament-shield::filament-shield.field.name'))
                                 ->unique(ignoreRecord: true)
                                 ->required()
+                                ->helperText(__('filament-shield::filament-shield.field.name.desc'))
                                 ->maxLength(255),
 
                             Forms\Components\TextInput::make('guard_name')
                                 ->label(__('filament-shield::filament-shield.field.guard_name'))
                                 ->default(Utils::getFilamentAuthGuard())
                                 ->nullable()
+                                ->helperText(__('filament-shield::filament-shield.field.guard_name.desc'))
                                 ->maxLength(255),
 
                             Forms\Components\Select::make(config('permission.column_names.team_foreign_key'))

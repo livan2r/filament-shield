@@ -21,7 +21,9 @@ return [
     */
 
     'field.name' => 'Name',
+    'field.name.desc' => 'Name of the role',
     'field.guard_name' => 'Guard Name',
+    'field.guard_name.desc' => 'Guard name of the role',
     'field.permissions' => 'Permissions',
     'field.team' => 'Team',
     'field.team.placeholder' => 'Select a team ...',

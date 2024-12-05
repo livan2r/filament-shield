@@ -20,7 +20,7 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'filed.section' => 'Role Settings',
+    'field.section' => 'Role Settings',
     'field.name' => 'Name',
     'field.name.desc' => 'Name of the role',
     'field.guard_name' => 'Guard Name',

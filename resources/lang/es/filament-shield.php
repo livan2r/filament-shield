@@ -19,7 +19,7 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'filed.section' => 'Configuración del Rol',
+    'field.section' => 'Configuración del Rol',
     'field.name' => 'Nombre',
     'field.name.desc' => 'Nombre del rol',
     'field.guard_name' => 'Guard',

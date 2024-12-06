@@ -39,6 +39,7 @@ return [
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'Rol',
     'resource.label.roles' => 'Roles',
+    'back' => 'Regresar',
 
     /*
     |--------------------------------------------------------------------------

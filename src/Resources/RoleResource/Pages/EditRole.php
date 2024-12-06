@@ -6,6 +6,7 @@ use App\Filament\Resources\BaseClasses\EditRecord;
 use BezhanSalleh\FilamentShield\Resources\RoleResource;
 use BezhanSalleh\FilamentShield\Support\Utils;
 use Filament\Actions;
+use Filament\Actions\Action;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 
@@ -18,6 +19,11 @@ class EditRole extends EditRecord
     protected function getActions(): array
     {
         return [
+            Action::make('back')
+                ->url(RoleResource::getUrl())
+                ->label(__('filament-shield::filament-shield.back'))
+                ->color('gray')
+                ->icon('heroicon-o-arrow-left'),
             Actions\DeleteAction::make()
                 ->icon('heroicon-o-trash'),
         ];

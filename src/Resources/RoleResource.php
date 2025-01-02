@@ -13,6 +13,7 @@ use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
+use Filament\Support\Enums\ActionSize;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Contracts\Support\Arrayable;
@@ -122,8 +123,14 @@ class RoleResource extends Resource implements HasShieldPermissions
                 //
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
+                Tables\Actions\EditAction::make()
+                    ->hiddenLabel()
+                    ->size(ActionSize::Medium)
+                    ->tooltip(__('filament-actions::edit.single.label')),
+                Tables\Actions\DeleteAction::make()
+                    ->hiddenLabel()
+                    ->size(ActionSize::Medium)
+                    ->tooltip(__('filament-actions::delete.single.label')),
             ])
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),

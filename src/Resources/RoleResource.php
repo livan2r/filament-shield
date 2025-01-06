@@ -53,6 +53,7 @@ class RoleResource extends Resource implements HasShieldPermissions
                     Section::make(__('filament-shield::filament-shield.field.section'))
                         ->icon('heroicon-o-cog')
                         ->iconColor('primary')
+                        ->compact()
                         ->schema([
                             Forms\Components\TextInput::make('name')
                                 ->label(__('filament-shield::filament-shield.field.name'))
